@@ -35,5 +35,9 @@
 
     <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/scripts/main.js"></script>
     
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/styles/sunburst.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.0.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    
   </body>
 </html>

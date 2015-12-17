@@ -51,7 +51,7 @@
                 <section class="entry-tag">
                   <?php the_tags('') ?>
                 </section>
-	<section class="entry-content clearfix">
+	<section class="entry-content  clearfix"><!-- markdown-body -->
 		<?php
 			the_content();
 
