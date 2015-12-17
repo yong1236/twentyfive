@@ -134,3 +134,5 @@ add_action( 'widgets_init', 'twentyfive_widgets_init' );
 
 //面包屑
 include("inc/breadcrumbs.php");
+
+include 'inc/wp-bootstrap-navwalker.php';

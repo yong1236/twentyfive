@@ -29,8 +29,12 @@
         <div class="container">
 		  	<?php
 				wp_nav_menu( array(
-					'theme_location' => 'primary',
-					'menu_class'     => 'nav navbar-nav primary-menu',
+						'theme_location' => 'primary',
+						'depth' => 2,
+						'container' => false,
+						'menu_class'     => 'nav navbar-nav primary-menu',
+						'fallback_cb' => 'wp_page_menu',
+						'walker' => new wp_bootstrap_navwalker()
 				 ) );
 			?>
         </div>

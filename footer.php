@@ -27,7 +27,13 @@
       </div>
     </footer>
     
-    
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/scripts/vendor.js"></script>
+
+
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/scripts/plugins.js"></script>
+
+
+    <script src="<?php echo esc_url( get_template_directory_uri() ); ?>/scripts/main.js"></script>
     
   </body>
 </html>
