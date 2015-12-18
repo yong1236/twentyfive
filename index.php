@@ -19,9 +19,9 @@ get_header();?>
 	<div class="row">
         <div class="col-lg-9 col-md-8 col-sm-7">
         	<?php if(is_home() ):?>
-        	<div class="row box box-white">
+<!--         	<div class="row box box-white"> -->
         		
-        	</div>
+<!--         	</div> -->
         	<?php endif;?>
         	<?php if ( have_posts() ) : ?>
 	        	<?php if ( is_home() && ! is_front_page() ) : ?>
@@ -32,8 +32,9 @@ get_header();?>
 				<?php if(is_page() || is_single() || is_singular() ):?>
 				
 				<?php elseif(is_home() ) :?>
-				<div class="row box box-white article-list">
-					<div class="title"><h3>近期博文</h3></div>
+				<div class="row box  article-list"><!-- box-white -->
+					<div class="title box-white"><h3>近期博文</h3></div>
+					<?php //if ( function_exists('ts_breadcrumbs') ) : ts_breadcrumbs(); endif;?>
         			<?php
 					// Start the loop.
 					while ( have_posts() ) : the_post();
@@ -85,7 +86,6 @@ get_header();?>
         	<?php 
         	// If no content, include the "No posts found" template.
         	else :
-        		echo 'fsafsadfsdfsd';
         		get_template_part( 'template-parts/content', 'none' );
         	endif;
         	?>

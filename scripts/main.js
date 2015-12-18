@@ -1,1 +1,1 @@
-console.log("'Allo 'Allo!");
+!function(a){function b(){a.map(c,function(b,c){a("."+c+" .title h3").prepend("&nbsp;").prepend(a("<i></i>").addClass("glyphicon").addClass(b))})}var c={widget_recent_entries:"glyphicon-list",widget_recent_comments:"glyphicon-comment",widget_archive:"glyphicon-calendar",widget_categories:"glyphicon-th",widget_meta:"glyphicon-cog"};a(function(){b()})}(jQuery);

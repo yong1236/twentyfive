@@ -7,7 +7,8 @@
  * @since Twenty Sixteen 1.0
  */
 ?>
-
+<div class="row box box-white">
+<?php if ( function_exists('ts_breadcrumbs') ) : ts_breadcrumbs(); endif;?>
 <section class="no-results not-found">
 	<header class="page-header">
 		<h1 class="page-title"><?php _e( 'Nothing Found', 'twentyfive' ); ?></h1>
@@ -31,3 +32,4 @@
 		<?php endif; ?>
 	</div><!-- .page-content -->
 </section><!-- .no-results -->
+</div>
